@@ -1,0 +1,13 @@
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-align: center;
+  background-color: $bg-color;
+
+  @media #{$tablet-widths} {
+
+  }
+
+  @media #{$desktop-widths} {
+  }
+}
+

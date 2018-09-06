@@ -1,0 +1,11 @@
+.modals__layer-around {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px;
+  background-color: rgba(1, 1, 1, 0.7);
+  z-index: 1002;
+  overflow: auto;
+}

@@ -1,0 +1,20 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/fonts.scss";
+
+@import "blocks/body.scss";
+@import "blocks/header.scss";
+@import "blocks/header__logo.scss";
+@import "blocks/main.scss";
+@import "blocks/main__preview.scss";
+@import "blocks/main__info.scss";
+@import "blocks/main__vote.scss";
+@import "blocks/vote__card.scss";
+@import "blocks/card__image.scss";
+@import "blocks/main__button.scss";
+@import "blocks/footer.scss";
+@import "blocks/main__modals";
+@import "blocks/modals__layer-around";
+
+

@@ -1,0 +1,32 @@
+.main__preview {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - #{$header-height});
+  margin-top: $header-height;
+}
+.preview__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/vybory-6.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+.preview__picture > img {
+  display: none;
+}
+.preview__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+  color: white;
+  font-size: 22px;
+  flex-grow: 1;
+  padding: 50px 0;
+}

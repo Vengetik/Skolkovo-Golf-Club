@@ -1,0 +1,6 @@
+.main__vote {
+  display: flex;
+  @include container;
+  justify-content: space-between;
+  list-style: none;
+}
