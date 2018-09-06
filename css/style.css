@@ -135,7 +135,7 @@ body {
   align-items: center;
   height: 345px;
   width: 260px;
-  background-image: url("../img/кандидат1.png");
+  background-image: url("../img/cand1.png");
   background-color: #2a3138;
   background-size: cover;
   background-position: 50% 50%;
@@ -143,11 +143,11 @@ body {
   border-radius: 5px;
   transition: all 3s ease; }
   .card__image--2 {
-    background-image: url("../img/кандидат2.png"); }
+    background-image: url("../img/cand2.png"); }
   .card__image--3 {
-    background-image: url("../img/кандидат3.png"); }
+    background-image: url("../img/cand3.png"); }
   .card__image--4 {
-    background-image: url("../img/кандидат4.png"); }
+    background-image: url("../img/cand4.png"); }
 
 .card__image:hover {
   animation: out 1.5s 1;
