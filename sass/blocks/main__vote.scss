@@ -4,4 +4,12 @@
   @include container;
   justify-content: space-between;
   list-style: none;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    height: 970px;
+  }
 }
+
