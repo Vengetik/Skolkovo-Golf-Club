@@ -94,6 +94,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
+  align-items: center;
   list-style: none; }
   @media (max-width: 1200px) {
     .main__vote {
@@ -103,7 +104,6 @@ body {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      align-content: space-around;
       height: 970px; } }
 
 .vote__card {
