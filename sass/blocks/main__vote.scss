@@ -1,5 +1,6 @@
 .main__vote {
   display: flex;
+  flex-wrap: wrap;
   @include container;
   justify-content: space-between;
   list-style: none;
