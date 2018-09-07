@@ -1,15 +1,19 @@
 .main__vote {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   @include container;
   justify-content: space-between;
   align-items: center;
   list-style: none;
+
   @media screen and (max-width: 998px) {
+    padding: 0;
+    flex-shrink: 1;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 970px;
+    height: 1000px;
   }
 }
 
