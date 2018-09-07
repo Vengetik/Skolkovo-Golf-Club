@@ -103,7 +103,6 @@ body {
   @media screen and (max-width: 998px) {
     .main__vote {
       padding: 0;
-      flex-shrink: 1;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
@@ -114,17 +113,27 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-shrink: 2; }
 
 .card__heading {
   margin: 15px 0;
   padding: 0; }
+  @media screen and (max-width: 500px) {
+    .card__heading {
+      width: 50%; } }
 
 .card__discription {
   font-size: 13px;
   font-weight: bold;
   margin: 0;
   max-width: 260px; }
+  @media screen and (max-width: 500px) {
+    .card__discription {
+      display: none; } }
+  @media screen and (max-width: 500px) {
+    .card__discription--mobile {
+      display: none; } }
 
 @keyframes out {
   0% {
@@ -143,6 +152,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 1;
   height: 345px;
   width: 260px;
   background-image: url("../img/cand1.png");
@@ -158,6 +168,10 @@ body {
     background-image: url("../img/cand3.png"); }
   .card__image--4 {
     background-image: url("../img/cand4.png"); }
+  @media screen and (max-width: 500px) {
+    .card__image {
+      height: 45vh;
+      width: 45vw; } }
 
 .card__image:hover {
   animation: out 1.5s 1;
@@ -213,12 +227,21 @@ body {
   text-decoration: none;
   letter-spacing: 0.03em;
   background: #1a2020; }
+  @media screen and (max-width: 550px) {
+    .footer {
+      font-size: 10px; } }
+  @media screen and (min-width: 551px) and (max-width: 900px) {
+    .footer {
+      font-size: 14px; } }
 
 .footer__contacts {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto 50px; }
+  @media screen and (max-width: 620px) {
+    .footer__contacts {
+      margin: 0; } }
 
 .hidden {
   display: none !important; }

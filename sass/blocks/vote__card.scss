@@ -4,15 +4,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 2;
 }
 
 .card__heading {
   margin: 15px 0;
   padding: 0;
+  @media screen and (max-width: 500px) {
+    width: 50%;
+  }
 }
 .card__discription {
   font-size: 13px;
   font-weight: bold;
   margin: 0;
   max-width: 260px;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+  &--mobile {
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
 }
+

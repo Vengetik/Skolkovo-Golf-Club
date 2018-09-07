@@ -8,10 +8,19 @@
   letter-spacing: 0.03em;
 
   background: #1a2020;
+  @media screen and (max-width: 550px) {
+    font-size: 10px;
+  }
+  @media screen and (min-width: 551px) and (max-width: 900px) {
+    font-size: 14px;
+  }
 }
 .footer__contacts {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto 50px;
+  @media screen and (max-width: 620px) {
+    margin: 0;
+  }
 }
