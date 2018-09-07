@@ -98,7 +98,7 @@ body {
   @media (max-width: 1200px) {
     .main__vote {
       padding: 0 30px; } }
-  @media (max-width: 767px) {
+  @media screen and (max-width: 998px) {
     .main__vote {
       flex-direction: column;
       justify-content: space-around;
