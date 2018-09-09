@@ -5,20 +5,37 @@ const modalLayer = document.querySelector('.modals__layer-around');
 const modalForm = document.querySelector('.vote__form');
 const modalSubmit = modalForm.querySelector('input[type="submit"]');
 const modalHeading = voteModal.querySelector('.vote__heading');
-
+const mainModals = document.querySelector('.main__modals');
 const checkbox = document.querySelectorAll('input[type="checkbox"]');
+const voteCard = document.querySelectorAll('.card__image');
+
+const chooseTrainer = () => {
+  for (let i = 0; i < checkbox.length; i++) {
+    if (checkbox[i].checked) {
+      voteCard[i].classList.add('checked');
+    } else {
+      voteCard[i].classList.remove('checked');
+    }
+  }
+};
+checkbox.forEach( (it) => {
+  it.addEventListener('click', chooseTrainer);
+});
+
+document.addEventListener('keydown', function onModalClose(evt) {
+  if (evt.keyCode === 27) {
+    mainModals.classList.add('hidden');
+    document.removeEventListener('keydown', onModalClose);
+  }
+});
 
 voteButton.addEventListener('click', function onVoteButtonClick(evt) {
-
-  voteModal.classList.toggle('hidden');
-  modalLayer.classList.toggle('hidden');
+  mainModals.classList.toggle('hidden');
 });
 
 modalLayer.addEventListener('click', function onModalLayerClick() {
-  voteModal.classList.toggle('hidden');
-  modalLayer.classList.toggle('hidden');
+  mainModals.classList.toggle('hidden');
 });
-
 modalSubmit.addEventListener('click', function (evt) {
   evt.preventDefault();
   modalHeading.style.display = 'none';

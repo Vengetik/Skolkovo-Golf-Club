@@ -29,4 +29,8 @@
   font-size: 22px;
   flex-grow: 1;
   padding: 50px 0;
+  @media screen and(max-width: 998px) {
+    padding: 10px 0;
+    font-size: 20px;
+  }
 }
