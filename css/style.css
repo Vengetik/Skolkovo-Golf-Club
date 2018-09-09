@@ -23,9 +23,6 @@ body {
   top: 0;
   background: white;
   z-index: 1000; }
-  @media screen and (max-width: 600px) {
-    .main-header {
-      position: absolute; } }
 
 .header__logo {
   display: flex;
@@ -59,6 +56,10 @@ body {
   width: 100%;
   height: calc(100vh - 140px);
   margin-top: 140px; }
+  @media screen and (max-width: 767px) {
+    .main__preview {
+      height: auto;
+      padding-top: 58.6667vw; } }
 
 .preview__picture {
   position: absolute;
@@ -68,6 +69,10 @@ body {
   bottom: 0;
   background: url("../img/vybory-6.jpg") no-repeat 50% 50%;
   background-size: cover; }
+  @media screen and (max-width: 767px) {
+    .preview__picture {
+      bottom: auto;
+      height: 58.6667vw; } }
 
 .preview__picture > img {
   display: none; }
@@ -81,7 +86,10 @@ body {
   font-size: 22px;
   flex-grow: 1;
   padding: 50px 0; }
-  @media screen and (max-width: 998px) {
+  @media screen and (max-width: 767px) {
+    .preview__description {
+      display: none; } }
+  @media screen and (min-width: 768px) and (max-width: 998px) {
     .preview__description {
       padding: 10px 0;
       font-size: 20px; } }
@@ -93,6 +101,9 @@ body {
 
 .info__content {
   z-index: 100; }
+  @media screen and (max-width: 767px) {
+    .info__content {
+      font-size: 14px; } }
 
 .main__vote {
   width: 100%;
@@ -166,7 +177,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-shrink: 1;
   height: 345px;
   width: 220px;
   background-image: url("../img/cand1.png");
@@ -184,7 +194,7 @@ body {
     background-image: url("../img/cand4.png"); }
   @media screen and (max-width: 500px) {
     .card__image {
-      height: 40vh;
+      height: 37vh;
       width: 45vw; } }
 
 .card__image:hover {
@@ -199,13 +209,15 @@ body {
 
 .vote__button {
   display: none;
-  width: 150px;
-  padding: 10px 20px;
+  width: 80%;
+  padding: 8px 15px;
   background: transparent;
   border-radius: 5px;
   border: 3px solid white;
   color: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box; }
   .vote__button:last-of-type {
     margin-top: 20px; }
 

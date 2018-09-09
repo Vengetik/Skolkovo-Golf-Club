@@ -7,6 +7,10 @@
   width: 100%;
   height: calc(100vh - #{$header-height});
   margin-top: $header-height;
+  @media screen and (max-width: 767px) {
+    height: auto;
+    padding-top: 58.6667vw;
+  }
 }
 .preview__picture {
   position: absolute;
@@ -16,6 +20,10 @@
   bottom: 0;
   background: url("../img/vybory-6.jpg") no-repeat 50% 50%;
   background-size: cover;
+  @media screen and (max-width: 767px) {
+    bottom: auto;
+    height: 58.6667vw;
+  }
 }
 .preview__picture > img {
   display: none;
@@ -29,7 +37,10 @@
   font-size: 22px;
   flex-grow: 1;
   padding: 50px 0;
-  @media screen and(max-width: 998px) {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 998px) {
     padding: 10px 0;
     font-size: 20px;
   }

@@ -5,4 +5,7 @@
 }
 .info__content {
   z-index: 100;
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+  }
 }

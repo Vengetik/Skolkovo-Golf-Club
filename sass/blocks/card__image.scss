@@ -20,7 +20,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-shrink: 1;
 
   height: 345px;
   width: 220px;
@@ -45,7 +44,7 @@
   }
 
   @media screen and (max-width: 500px) {
-    height: 40vh;
+    height: 37vh;
     width: 45vw;
   }
 }
@@ -61,10 +60,9 @@
 }
 .vote__button {
   display: none;
-  width: 150px;
+  width: 80%;
 
-
-  padding: 10px 20px;
+  padding: 8px 15px;
 
   background: transparent;
   border-radius: 5px;
@@ -72,6 +70,8 @@
 
   color: white;
   text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
   &:last-of-type {
     margin-top: 20px;
   }
