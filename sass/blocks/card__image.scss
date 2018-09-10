@@ -21,8 +21,6 @@
   justify-content: center;
   align-items: center;
 
-  height: 345px;
-  width: 220px;
 
   background-image: url("../img/cand1.png");
   background-color: #2a3138;
@@ -42,15 +40,23 @@
   &--4 {
     background-image: url("../img/cand4.png");
   }
-  @media screen and (max-width: 1023px) {
-    height: 250px;
-    width: 160px;
-  }
-  @media screen and (max-width: 500px) {
-    height: 37vh;
+
+  @media screen and (min-width: 320px) {
+    height: 40vh;
     width: 45vw;
   }
-
+  @media screen and (min-width: 500px) {
+    height: 65vh;
+    width: 46vw;
+  }
+  @media screen and (min-width: 767px) {
+    height: 30vh;
+    width: 22vw;
+  }
+  @media screen and (min-width: 1024px) {
+    height: 345px;
+    width: 220px;
+  }
 }
 .card__image:hover {
    animation: out 1.5s 1;
