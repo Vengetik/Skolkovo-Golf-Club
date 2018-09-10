@@ -36,49 +36,55 @@
       <br><br>Результаты будут объявлены 10 сентября. </p>
   </section>
   <form>
-    <ul class="main__vote">
-      <li class="vote__card">
-        <div class="card__image card__image--1">
-          <input type="checkbox" id="image__btn-1">
-          <label for="image__btn-1" class="vote__button vote__button--choose">Выбрать</label>
-          <button class="vote__button vote__button--more">Подробнее</button>
+    <section class="main__vote">
+
+      <div class="card__group card__group--1">
+        <div class="vote__card">
+          <div class="card__image card__image--1">
+            <input type="checkbox" id="image__btn-1">
+            <label for="image__btn-1" class="vote__button vote__button--choose">Выбрать</label>
+            <button class="vote__button vote__button--more">Подробнее</button>
+          </div>
+          <h3 class="card__heading">Юлия Кириленко</h3>
+          <p class="card__discription">Каждый год Гольф-клуб «Сколково» выбирает капитанов. Это почетная и ответственная должность: капитаны активно участвуют в жизни клуба</p>
         </div>
-        <h3 class="card__heading">Юлия Кириленко</h3>
-        <p class="card__discription">Каждый год Гольф-клуб «Сколково» выбирает капитанов. Это почетная и ответственная должность: капитаны активно участвуют в жизни клуба</p>
-      </li>
-      <li class="vote__card">
-        <div class="card__image card__image--2">
-          <input type="checkbox" id="image__btn-2">
-          <label for="image__btn-2" class="vote__button vote__button--choose">Выбрать</label>
-          <button class="vote__button vote__button--more">Подробнее</button>
+        <div class="vote__card">
+          <div class="card__image card__image--2">
+            <input type="checkbox" id="image__btn-2">
+            <label for="image__btn-2" class="vote__button vote__button--choose">Выбрать</label>
+            <button class="vote__button vote__button--more">Подробнее</button>
+          </div>
+          <h3 class="card__heading">Андрей Перегудов</h3>
+          <p class="card__discription">Каждый год Гольф-клуб «Сколково» выбирает капитанов. Это почетная и ответственная должность: капитаны активно участвуют в жизни клуба</p>
         </div>
-        <h3 class="card__heading">Андрей Перегудов</h3>
-        <p class="card__discription">Каждый год Гольф-клуб «Сколково» выбирает капитанов. Это почетная и ответственная должность: капитаны активно участвуют в жизни клуба</p>
-      </li>
-      <li class="vote__card">
-        <div class="card__image card__image--3">
-          <input type="checkbox" id="image__btn-3">
-          <label for="image__btn-3" class="vote__button vote__button--choose">Выбрать</label>
-          <button class="vote__button vote__button--more">Подробнее</button>
+      </div>
+
+      <div class="card__group card__group--2">
+        <div class="vote__card">
+          <div class="card__image card__image--3">
+            <input type="checkbox" id="image__btn-3">
+            <label for="image__btn-3" class="vote__button vote__button--choose">Выбрать</label>
+            <button class="vote__button vote__button--more">Подробнее</button>
+          </div>
+          <h3 class="card__heading">Ирина Нестерова</h3>
+          <p class="card__discription">Каждый год Гольф-клуб «Сколково» выбирает капитанов. Это почетная и ответственная должность: капитаны активно участвуют в жизни клуба</p>
         </div>
-        <h3 class="card__heading">Ирина Нестерова</h3>
-        <p class="card__discription">Каждый год Гольф-клуб «Сколково» выбирает капитанов. Это почетная и ответственная должность: капитаны активно участвуют в жизни клуба</p>
-      </li>
-      <li class="vote__card">
-        <div class="card__image card__image--4">
-          <input type="checkbox" id="image__btn-4">
-          <label for="image__btn-4" class="vote__button vote__button--choose">Выбрать</label>
-          <button class="vote__button vote__button--more">Подробнее</button>
+        <div class="vote__card">
+          <div class="card__image card__image--4">
+            <input type="checkbox" id="image__btn-4">
+            <label for="image__btn-4" class="vote__button vote__button--choose">Выбрать</label>
+            <button class="vote__button vote__button--more">Подробнее</button>
+          </div>
+          <h3 class="card__heading">Алексей Стриганов</h3>
+          <p class="card__discription">Каждый год Гольф-клуб «Сколково» выбирает капитанов. Это почетная и ответственная должность <span class="card__description--mobile"> : капитаны активно участвуют в жизни клуба </span></p>
         </div>
-        <h3 class="card__heading">Алексей Стриганов</h3>
-        <p class="card__discription">Каждый год Гольф-клуб «Сколково» выбирает капитанов. Это почетная и ответственная должность <span class="card__description--mobile"> : капитаны активно участвуют в жизни клуба </span></p>
-      </li>
-    </ul>
+      </div>
+    </section>
   </form>
   <button class="main__button">Проголосовать</button>
-  <section class="main__modals hidden">
-    <div class="modals__layer-around "></div>
-    <section class="modal__vote ">
+  <section class="main__modals  hidden">
+    <div class="modals__layer-around"></div>
+    <section class="modal__vote">
       <svg width="24" height="33" viewBox="0 0 19 30" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M4.44043 9.96777L14.291 0L19 4.67725L4.46973
       19.3823C1.87598 16.7886 1.8623 12.5786 4.44043 9.96777ZM0 25.3237L14.5322 10.6201C17.125 13.2134
@@ -90,6 +96,44 @@
         <input type="text" placeholder="Имя" name="name">
         <input type="text" placeholder="Отчество" name="middle name">
         <input type="submit" value="Проголосовать">
+      </form>
+    </section>
+  </section>
+  <section class="trainer__modals hidden">
+    <div class="modals__layer-around"></div>
+    <section class="modal__trainer">
+      <svg width="24" height="33" viewBox="0 0 19 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.44043 9.96777L14.291 0L19 4.67725L4.46973
+      19.3823C1.87598 16.7886 1.8623 12.5786 4.44043 9.96777ZM0 25.3237L14.5322 10.6201C17.125 13.2134
+      17.1396 17.4238 14.5596 20.0337L4.70996 30L0 25.3237Z" fill="#286140"/>
+      </svg>
+      <div class="trainer__content trainer__content--1 hidden">
+        <img class="trainer__image trainer__image--1" src="img/cand1.png" alt="Фото кандидата" >
+        <p class="trainer__discription trainer__discription--1"><b>Валерия Соколова</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eligendi
+          impedit laudantium nobis repellat reprehenderit sed sit tenetur veniam voluptate?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eligendi
+          impedit laudantium nobis repellat reprehenderit sed sit tene Lorem ipsum dolor sit amet.
+          dit laudantium nobis repellat reprehenderit sed sit tene Lorem ipsum dolor sit ametdit laudantium nobis repellat reprehenderit sed sit tene Lorem ipsum dolor sit amet..</p>
+      </div>
+      <div class="trainer__content trainer__content--2 hidden">
+        <img class="trainer__image trainer__image--2" src="img/cand2.png" alt="Фото кандидата">
+        <div class="trainer__discription trainer__discription--2"><b>Валерия Соколова</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eligendi
+          impedit laudantium nobis repellat reprehenderit sed sit tenetur veniam voluptate?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eligendi
+          impedit laudantium nobis repellat reprehenderit sed sit tenetur veniam voluptate?</div>
+      </div>
+      <div class="trainer__content trainer__content--3 hidden">
+        <img class="trainer__image trainer__image--3" src="img/cand3.png" alt="Фото кандидата">
+        <p class="trainer__discription trainer__discription--3"><b>Валерия Соколова</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eligendi
+          impedit laudantium nobis repellat reprehenderit sed sit tenetur veniam voluptate?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eligendi
+          impedit laudantium nobis repellat reprehenderit sed sit tenetur veniam voluptate?</p>
+      </div>
+      <div class="trainer__content trainer__content--4 hidden">
+        <img class="trainer__image trainer__image--4" src="img/cand4.png" alt="Фото кандидата">
+        <p class="trainer__discription trainer__discription--4"><b>Валерия Соколова</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eligendi
+          impedit laudantium nobis repellat reprehenderit sed sit tenetur veniam voluptate?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eligendi
+          impedit laudantium nobis repellat reprehenderit sed sit tenetur veniam voluptate?</p>
+      </div>
+      <form action="" class="vote__form">
+        <input class="vote__button--trainer" type="submit" value="Проголосовать">
       </form>
     </section>
   </section>

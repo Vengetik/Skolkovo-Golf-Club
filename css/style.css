@@ -108,29 +108,27 @@ body {
 .main__vote {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   padding: 0 50px;
   max-width: 1200px;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
   @media (max-width: 1200px) {
     .main__vote {
       padding: 0; } }
-  @media screen and (max-width: 1010px) {
-    .main__vote {
-      padding: 0;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      height: 1000px; } }
-  @media screen and (max-width: 500px) {
-    .main__vote {
-      height: 800px; } }
-  @media screen and (max-width: 376px) {
-    .main__vote {
-      height: 700px; } }
+
+.card__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media screen and (min-width: 768px) {
+    .card__group {
+      flex-direction: row; } }
+  @media screen and (max-width: 767px) {
+    .card__group:nth-child(odd) {
+      margin-right: 10px; } }
 
 .vote__card {
   position: relative;
@@ -192,6 +190,10 @@ body {
     background-image: url("../img/cand3.png"); }
   .card__image--4 {
     background-image: url("../img/cand4.png"); }
+  @media screen and (max-width: 1023px) {
+    .card__image {
+      height: 250px;
+      width: 160px; } }
   @media screen and (max-width: 500px) {
     .card__image {
       height: 37vh;
@@ -202,14 +204,14 @@ body {
   animation-fill-mode: forwards; }
 
 .checked {
-  border: 6px dashed green; }
+  box-shadow: 0 0 0 6px green inset; }
 
 .card__image > input {
   display: none; }
 
 .vote__button {
   display: none;
-  width: 80%;
+  width: 85%;
   padding: 8px 15px;
   background: transparent;
   border-radius: 5px;
@@ -276,7 +278,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: block;
+  flex-direction: column;
   width: 500px;
   max-width: 100%;
   height: 400px;
@@ -290,8 +292,8 @@ body {
   background: white; }
 
 .modal__vote > svg {
-  margin-top: 20px;
-  margin-bottom: 10px; }
+  position: fixed;
+  top: 10px; }
 
 .vote__heading {
   color: #3f5847;
@@ -304,10 +306,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 80%; }
 
 .vote__form > input:not([type='submit']) {
-  width: 400px;
+  width: 100%;
   padding: 10px 10px;
   background: #e8e8e9;
   border: 0;
@@ -332,6 +335,52 @@ body {
   width: 300px;
   margin-top: 30px;
   margin-bottom: 10px; }
+  .vote__form > input[type='submit']:last-of-type {
+    margin-top: 35px; }
+
+.modal__trainer {
+  width: 500px;
+  max-width: 100%;
+  height: 400px;
+  max-height: 100%;
+  position: fixed;
+  z-index: 1003;
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px; }
+
+.modal__trainer > svg {
+  margin-top: 10px; }
+
+.trainer__content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  margin-top: 40px;
+  margin-right: 5px; }
+
+.trainer__image {
+  width: 150px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 5px; }
+
+.trainer__discription {
+  height: 250px;
+  overflow: auto;
+  margin-top: 20px;
+  padding: 0 2px;
+  border: 1px solid lightgray;
+  border-radius: 10px; }
 
 .modals__layer-around {
   position: fixed;

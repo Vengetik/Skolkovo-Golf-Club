@@ -42,25 +42,29 @@
   &--4 {
     background-image: url("../img/cand4.png");
   }
-
+  @media screen and (max-width: 1023px) {
+    height: 250px;
+    width: 160px;
+  }
   @media screen and (max-width: 500px) {
     height: 37vh;
     width: 45vw;
   }
+
 }
 .card__image:hover {
    animation: out 1.5s 1;
    animation-fill-mode: forwards;
  }
 .checked {
-  border: 6px dashed green;
+  box-shadow: 0 0 0 6px green inset;
 }
 .card__image > input {
   display: none;
 }
 .vote__button {
   display: none;
-  width: 80%;
+  width: 85%;
 
   padding: 8px 15px;
 

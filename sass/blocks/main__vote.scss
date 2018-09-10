@@ -1,23 +1,35 @@
 .main__vote {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   @include container;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   list-style: none;
-  @media screen and(max-width: 1010px) {
-    padding: 0;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 1000px;
+  padding: 0;
+  //@media screen and(max-width: 1010px) {
+  //  padding: 0;
+  //  flex-direction: column;
+  //  justify-content: space-around;
+  //  align-items: center;
+  //  height: 1000px;
+  //}
+  //@media screen and (max-width: 500px) {
+  //  height: 800px;
+  //}
+  //@media screen and (max-width: 376px) {
+  //  height: 700px;
+  //}
+}
+.card__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen  and (min-width: 768px) {
+    flex-direction: row;
   }
-  @media screen and (max-width: 500px) {
-    height: 800px;
-  }
-  @media screen and (max-width: 376px) {
-    height: 700px;
+  @media screen  and (max-width: 767px) {
+    &:nth-child(odd) {
+      margin-right: 10px
+    }
   }
 }
-
