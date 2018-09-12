@@ -28,6 +28,9 @@ body {
   top: 0;
   background: white;
   z-index: 1000; }
+  @media screen and (max-width: 600px) {
+    .main-header {
+      position: relative; } }
 
 .header__logo {
   display: flex;
@@ -144,7 +147,7 @@ body {
   flex-shrink: 2; }
 
 .card__heading {
-  margin: 2px 0;
+  margin: 8px 0;
   padding: 0;
   text-align: left;
   font-size: 19px; }
@@ -154,7 +157,7 @@ body {
 
 .card__discription {
   font-size: 13px;
-  font-weight: bold;
+  font-weight: normal;
   margin: 0;
   margin-bottom: 5px;
   max-width: 230px; }
@@ -360,7 +363,8 @@ body {
   top: 50%;
   border-radius: 10px;
   transform: translate(-50%, -50%);
-  background: white; }
+  background: white;
+  height: 400px; }
 
 .modal__vote > svg {
   position: fixed;
@@ -369,7 +373,7 @@ body {
 .vote__heading {
   color: #3f5847;
   margin: 0;
-  margin-top: 35px;
+  margin-top: 40px;
   font-size: 26px;
   padding: 0; }
 
@@ -423,8 +427,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 600px;
-  height: 100vh; }
+  width: 600px; }
+  @media screen and (max-width: 500px) {
+    .modal__trainer {
+      height: 80vh; } }
 
 .modal__trainer > svg {
   margin-top: 10px; }
@@ -434,24 +440,51 @@ body {
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 250px;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-right: 5px; }
+  @media screen and (max-width: 500px) {
+    .trainer__content {
+      flex-direction: column; } }
 
 .trainer__image {
   width: 150px;
   height: 200px;
   margin: 10px;
   border-radius: 5px; }
+  @media screen and (max-width: 500px) {
+    .trainer__image {
+      margin: 5px;
+      height: 33vh;
+      width: 25vh; } }
 
 .trainer__discription {
   height: 250px;
   overflow: auto;
-  margin-top: 20px;
+  margin: 20px 2px 0 6px;
   padding: 0 2px;
   border: 1px solid lightgray;
   border-radius: 10px; }
+  @media screen and (max-width: 500px) {
+    .trainer__discription {
+      margin-top: 5px;
+      height: auto; } }
+
+.vote__button--trainer {
+  width: 280px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  background: #3f5847;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.08em;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .modals__layer-around {
   position: fixed;

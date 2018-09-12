@@ -6,7 +6,7 @@ const modalForm = document.querySelector('.vote__form');
 const modalSubmit = modalForm.querySelector('input[type="submit"]');
 const modalHeading = voteModal.querySelector('.vote__heading');
 const mainModals = document.querySelector('.main__modals');
-const checkbox = document.querySelectorAll('input[type="checkbox"]');
+const checkbox = document.querySelectorAll('input[type="radio"]');
 const voteCard = document.querySelectorAll('.card__image');
 
 const voteButtonMore = document.querySelectorAll('.vote__button--more');
@@ -14,18 +14,27 @@ const voteButtonMore = document.querySelectorAll('.vote__button--more');
 const trainerModals = document.querySelector('.trainer__modals');
 const trainerModalsContent = document.querySelectorAll('.trainer__content');
 
+const removeCheck = () => {
+  voteCard.forEach( (it, index) => {
+    if (it.classList.contains('checked')) {
+      it.classList.remove('checked');
+      checkbox[index].checked = false;
+    }
+  })
+};
+
 const chooseTrainer = () => {
   for (let i = 0; i < checkbox.length; i++) {
+    removeCheck();
     if (checkbox[i].checked) {
       voteCard[i].classList.add('checked');
-    } else {
-      voteCard[i].classList.remove('checked');
+      break
     }
-    if(document.getElementsByClassName("checked").length>1){
-      alert("Поэалуйста, выберите только одного тренера.");
-      checkbox[i].checked = false;
-      voteCard[i].classList.remove("checked");
-    }
+    // if(document.getElementsByClassName("checked").length>1){
+    //   alert("Пожалуйста, выберите только одного тренера.");
+    //   checkbox[i].checked = false;
+    //   voteCard[i].classList.remove("checked");
+    // }
   }
 };
 
